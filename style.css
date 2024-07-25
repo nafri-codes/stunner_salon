@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  position: sticky;
+}
+.nav-container {
+  display: flex;
+  width: 100%;
+}
+.nav-heading {
+  margin-top: 0.5%;
+  margin-left: 5%;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 30px;
+}
+.nav-list {
+  display: inline;
+
+  list-style: none;
+  margin-left: 30%;
+  padding: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.nav-ul {
+  display: flex;
+  margin-left: 50%;
+  margin-top: 0.5%;
+}
+.nav-ul li.a {
+  color: white;
+  background-color: #080606;
+  padding: 10px;
+}
+.main {
+  padding: 0;
+  margin: 0;
+}
+.main-container {
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  margin-top: 5%;
+  justify-content: center;
+}
+.main-text > p {
+  font-size: 25px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  margin-top: 50px;
+  letter-spacing: 12px;
+}
+.main-text > p > span {
+  display: inline-block;
+  background-color: #080606;
+  color: white;
+  width: 220px;
+}
+.main-img {
+  mask-image: -webkit-linear-gradient(transparent 2px, black 100px);
+}
+section {
+  display: flex;
+}
+.sec-container {
+  position: relative;
+  margin-left: 60px;
+  margin-top: 150px;
+  background: #f7f4f4;
+  display: grid;
+  gap: 20px;
+  width: 60%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 150px 100px 100px;
+  grid-template-areas:
+    "img1 img2 img7"
+    "img1 img2 img7"
+    "img1 img3 img5"
+    "img4 img6 img5"
+    "img4 img6 img5";
+}
+
+.sec-container .img1 {
+  grid-area: img1;
+}
+.img1::after {
+  content: "haircut";
+  position: absolute;
+  background-color: #f7f588;
+  left: 325%;
+  letter-spacing: 2px;
+  top: 50%;
+  width: 30vw;
+  height: 46vh;
+  z-index: 1;
+  font-size: 40px;
+  font-family: fantasy;
+  text-transform: uppercase;
+  text-align: center;
+  align-content: center;
+  visibility: hidden;
+}
+.img1:hover::after{
+  visibility: visible;
+}
+.img2::after {
+  content: "facial";
+  position: absolute;
+  background-color: #f7f588;
+  left: 220%;
+  top: 90%;
+  width: 30vw;
+  letter-spacing: 2px;
+  height: 46vh;
+  z-index: 1;
+  font-size: 40px;
+  font-family: fantasy;
+  text-transform: uppercase;
+  text-align: center;
+  align-content: center;
+  visibility: hidden;
+}
+.img2:hover::after{
+  visibility: visible;
+}
+.img3::after {
+  content: "baby haircut";
+  position: absolute;
+  background-color: #fafa94;
+  left: 220%;
+  top: -30%;
+  width: 30vw;
+  height: 46vh;
+  letter-spacing: 2px;
+  z-index: 1;
+  font-size: 40px;
+  font-family: fantasy;
+  text-transform: uppercase;
+  text-align: center;
+  align-content: center;
+  visibility: hidden;
+}
+.img3:hover::after{
+  visibility: visible;
+}
+.img4::after {
+  content: "hair colouring";
+  position: absolute;
+  background-color: #fafa94;
+  left: 325%;
+  top: -96%;
+  width: 30vw;
+  height: 46vh;
+  letter-spacing: 2px;
+  z-index: 1;
+  font-size: 40px;
+  font-family: fantasy;
+  text-transform: uppercase;
+  text-align: center;
+  align-content: center;
+  visibility: hidden;
+}
+.img4:hover::after{
+  visibility: visible;
+}
+.img5::after {
+  content: "hair colouring";
+  position: absolute;
+  background-color: #fafa94;
+  left: 115%;
+  top: -11%;
+  width: 30vw;
+  height: 46vh;
+  z-index: 1;
+  font-size: 40px;
+  font-family: fantasy;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  align-content: center;
+  visibility: hidden;
+}
+.img5:hover::after{
+  visibility: visible;
+}
+.img6::after {
+  content: "head massage";
+  position: absolute;
+  background-color: #fafa94;
+  left: 220%;
+  top: -98%;
+  width: 30vw;
+  height: 46vh;
+  z-index: 1;
+  font-size: 40px;
+  font-family: fantasy;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  align-content: center;
+  visibility: hidden;
+}
+.img6:hover::after{
+  visibility: visible;
+}
+.img7::after {
+  content: "hair straightening";
+  position: absolute;
+  background-color: #fafa94;
+  left: 115%;
+  top: 90%;
+  width: 30vw;
+  height: 46vh;
+  z-index: 1;
+  font-size: 40px;
+  font-family:fantasy;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  align-content: center;
+  visibility: hidden;
+}
+.img7:hover::after{
+  visibility: visible;
+}
+.sec-container .img2 {
+  grid-area: img2;
+}
+.sec-container .img3 {
+  grid-area: img3;
+}
+.sec-container .img4 {
+  grid-area: img4;
+}
+.sec-container .img5 {
+  grid-area: img5;
+}
+.sec-container .img6 {
+  grid-area: img6;
+}
+.sec-container .img7 {
+  grid-area: img7;
+}
+
+.sec-container .item {
+  position: relative;
+  background-color: #080606;
+}
+.sec-container .item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.after {
+  height: 20vh;
+}
+.sec-container:hover .item img:not(:hover) {
+  filter: grayscale(0.8);
+}
+.sec-text-container {
+  position: relative;
+}
+.sec-heading {
+  position: absolute;
+  top: 170px;
+  left: 250px;
+  font-size: 45px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-transform: capitalize;
+  text-align: center;
+}
+.arrow{
+  position: absolute;
+  top: 60%;
+  left: 270px;
+  z-index: 0;
+}
+
+@media (max-width: 390px) {
+  .nav-list {
+    display: none;
+  }
+  .nav-heading {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+  }
+  .nav-container {
+    display: inline;
+  }
+  .b,
+  .c {
+    display: none;
+  }
+  .u {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    margin-top: 20px;
+  }
+  .main-text > p {
+    font-size: 10px;
+    margin-top: 10px;
+    letter-spacing: 10px;
+  }
+  .main-text > p > span {
+    display: block;
+    text-align: center;
+    margin-left: 50px;
+
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
+}
